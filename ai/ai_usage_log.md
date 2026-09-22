@@ -45,4 +45,4 @@ command produces this format and appends it in the right order.
   `.github/ISSUE_TEMPLATE/` (bug_report, feature_request, question)
 - **Nature of Contribution**: Scaffolding, drafting, and adaptation of an existing template
 - **Human Review Status**: Pending review by N. A. Frissell (W2NAF)
-- **Git Hash**: [to be filled in after committing]
+- **Git Hash**: d1983ff
