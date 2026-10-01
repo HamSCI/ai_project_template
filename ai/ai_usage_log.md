@@ -65,4 +65,4 @@ command produces this format and appends it in the right order.
 - **Sections/Files Affected**: `.claude/commands/commit.md` (Git Hash and submodule pointer-bump steps)
 - **Nature of Contribution**: Edit
 - **Human Review Status**: Pending review
-- **Git Hash**: [fill in after committing]
+- **Git Hash**: ee16043 (PR HamSCI/ai_project_template#3)
