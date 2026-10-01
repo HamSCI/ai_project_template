@@ -61,7 +61,7 @@ the work is unpublished.
 | `.claude/rules/hamsci-data.md` | Callsign attribution, station-location privacy, community datasets, volunteer credit. |
 | `.claude/rules/latex-writing.md` | Optional. Scoped to `.tex`, `.bib`, `.cls`, `.sty`. |
 | `.claude/rules/python-code.md` | Optional. Scoped to `.py`, `pyproject.toml`, `requirements*.txt`. |
-| `.claude/commands/commit.md` | The `/commit` workflow: log the session, commit submodules first, then the main repo. |
+| `.claude/commands/commit.md` | The `/commit` workflow: log the session, then commit each changed repo (submodules first) on a feature branch and open a pull request. |
 | `ai/ai_usage_log.md` | Append-only record of every substantive AI-assisted session. |
 | `docs/GETTING_STARTED.md` | Onboarding for participants new to Claude Code or to AI governance. |
 | `.github/ISSUE_TEMPLATE/` | Bug, enhancement, and question templates matching HamSCI house style. |

@@ -46,3 +46,13 @@ command produces this format and appends it in the right order.
 - **Nature of Contribution**: Scaffolding, drafting, and adaptation of an existing template
 - **Human Review Status**: Pending review by N. A. Frissell (W2NAF)
 - **Git Hash**: d1983ff
+
+## [2026-10-01 16:26 UTC]
+- **Tool**: Claude (Anthropic), claude-opus-5-5
+- **Session Purpose**: Update the template so that every commit goes on a feature branch and
+  through a pull request that a human reviews and merges, replacing the earlier
+  "commit to main, ask before pushing" workflow.
+- **Sections/Files Affected**: `.claude/commands/commit.md` (steps 6 to 9 rewritten for branch, PR, pointer bump, push order), `CLAUDE.md` (Commits and push paragraphs; Submodules order), `.claude/rules/python-code.md`, `.claude/rules/ai-governance.md`, `docs/GETTING_STARTED.md`, `README.md`
+- **Nature of Contribution**: Edit
+- **Human Review Status**: Pending review
+- **Git Hash**: [fill in after committing]

@@ -69,8 +69,9 @@ deleting it: it makes the file look like it was reviewed when it was not.
 ### 5. Make your first commit
 
 Run `/commit` inside Claude Code. It will ask what the session was for, draft a log entry, show
-it to you for confirmation, append it to `ai/ai_usage_log.md`, and commit. It will not push
-without you saying so.
+it to you for confirmation, append it to `ai/ai_usage_log.md`, and commit. This first commit seeds
+`main`, so it will ask before pushing it. Every commit after that goes on a feature branch:
+`/commit` pushes the branch and opens a pull request for review.
 
 ---
 
@@ -115,8 +116,10 @@ your science supports.
 **Students: check with your advisor.** Your institution's academic integrity policy applies to
 thesis and coursework-adjacent research, and it may be stricter than anything in this template.
 
-**Nothing pushes by itself.** Claude will not push to a remote without you saying so, and will
-not force-push or hard-reset. If you ever see it about to, stop it.
+**Nothing lands on `main` by itself.** Every change goes through a pull request, and a human
+merges it. Once you approve a commit, Claude pushes its feature branch and opens the PR; it will
+not push anything else without you saying so, and will not merge, force-push, or hard-reset. If
+you ever see it about to, stop it.
 
 **Do not commit data.** The `.gitignore` blocks the common formats. Bulk data belongs in an
 archive, fetched by a script that is committed, so that anyone can regenerate your inputs.

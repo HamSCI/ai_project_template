@@ -67,12 +67,18 @@ directories to match the project. The scaffold provides:
 open. Write them for a reader with no context, which in practice means a future Claude session
 and a future you.
 
-**Commits.** Use the `/commit` command. It logs the AI session, commits submodules first, then
-commits the main repo. Prefix AI-assisted commits with `[AI-assisted]`. Reference tracking
-issues (`refs #N`, or `closes #N` only when completion is yours to declare).
+**Commits.** Use the `/commit` command. It logs the AI session, then commits each changed repo
+(submodules first) on a feature branch and opens a pull request. Prefix AI-assisted commits with
+`[AI-assisted]`. Reference tracking issues (`refs #N`, or `closes #N` only when completion is
+yours to declare).
 
-**Never push without explicit instruction.** Never force-push or hard-reset. Fetch and verify
-remote state before any push.
+**Every change goes through a pull request.** Branch from `origin/main`, commit on the branch,
+push the branch, and open a PR with `gh pr create`. A human maintainer reviews and merges.
+Claude never commits or pushes directly to `main` and never merges.
+
+**Pushing a feature branch and opening its PR is standing permission** once the user has approved
+the commit. Any other push needs explicit instruction. Never force-push or hard-reset. Fetch and
+verify remote state before any push.
 
 **Project boards and issue status are human-curated.** Read them freely; propose changes and
 name the exact command rather than running it.
@@ -82,10 +88,12 @@ name the exact command rather than running it.
 If the project includes submodules (an Overleaf manuscript, a separate code repository, a
 hardware design repo), the commit and push order is fixed:
 
-1. Commit **inside** the submodule
-2. Commit the updated submodule pointer in this repo
-3. Push the submodule
-4. Push this repo
+1. Commit **inside** the submodule, on its own feature branch
+2. Push the submodule branch and open its PR
+3. After that PR merges, commit the updated submodule pointer in this repo, on this repo's branch
+4. Push this repo's branch and open or update its PR
+
+Never point this repo at an unmerged submodule branch commit.
 
 Never the reverse at either stage. A parent pushed ahead of its submodule looks correct on the
 machine that did it and breaks for every clone, because the recorded pointer names a commit no
