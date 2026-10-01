@@ -55,4 +55,4 @@ command produces this format and appends it in the right order.
 - **Sections/Files Affected**: `.claude/commands/commit.md` (steps 6 to 9 rewritten for branch, PR, pointer bump, push order), `CLAUDE.md` (Commits and push paragraphs; Submodules order), `.claude/rules/python-code.md`, `.claude/rules/ai-governance.md`, `docs/GETTING_STARTED.md`, `README.md`
 - **Nature of Contribution**: Edit
 - **Human Review Status**: Pending review
-- **Git Hash**: d96b578 (branch pr-workflow, PR HamSCI/ai_project_template#1), pending merge
+- **Git Hash**: d96b578 (branch pr-workflow, PR HamSCI/ai_project_template#1), merged as 4276dd1
