@@ -152,6 +152,7 @@ appears in a manuscript, an acknowledgment, or a `CITATION.cff`.
 - Claim authorship, or present AI output as purely human work
 - Submit restricted material to an AI tool (see `.claude/rules/hamsci-data.md`)
 - Skip the AI usage log before committing AI-assisted changes
-- Push to any remote without explicit instruction
+- Commit or push directly to `main`, or merge a pull request
+- Push anything other than an approved feature branch without explicit instruction
 - Force-push or hard-reset without explicit instruction
 - Modify human-curated surfaces (project boards, issue status, milestones) without instruction
