@@ -67,6 +67,14 @@ directories to match the project. The scaffold provides:
 open. Write them for a reader with no context, which in practice means a future Claude session
 and a future you.
 
+**Commit the human-readable record.** Rendered memos, reports, posters and final figures (PDF,
+PNG) are committed next to the source that produces them. They show what the work found without
+anyone having to rebuild it, and the commit history becomes a readable record of what was done.
+When a source changes, rebuild its output and commit both in the same commit, so they never
+disagree. What stays out of git: LaTeX intermediates (`.aux`, `.log`, `.bbl` and the like),
+caches, scratch output, and bulk or raw data that a committed script regenerates. A single file
+over 50 MB needs a decision first (GitHub warns at 50 MB and rejects files over 100 MB).
+
 **Commits.** Use the `/commit` command. It logs the AI session, then commits each changed repo
 (submodules first) on a feature branch and opens a pull request. Prefix AI-assisted commits with
 `[AI-assisted]`. Reference tracking issues (`refs #N`, or `closes #N` only when completion is

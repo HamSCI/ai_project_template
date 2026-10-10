@@ -21,7 +21,7 @@ env/
 .mypy_cache/
 .ruff_cache/
 
-# LaTeX build artifacts
+# LaTeX build artifacts. The compiled PDF is not listed: it is committed with its source.
 *.aux
 *.log
 *.out
@@ -55,11 +55,9 @@ data/cache/
 *.iq
 *.sc16
 
-# Generated figures in a working repo: the code is the artifact.
-# A release repo that archives figures alongside their code should
-# remove these two lines and commit the rendered output.
-figs/
-figures/
+# Rendered output (figures, memo and report PDFs) IS committed: it is the
+# human-readable record of what the code found. Ignore scratch output by its
+# own path rather than ignoring figures wholesale.
 
 # Credentials
 .env
