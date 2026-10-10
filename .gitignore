@@ -55,9 +55,10 @@ data/cache/
 *.iq
 *.sc16
 
-# Rendered output (figures, memo and report PDFs) IS committed: it is the
-# human-readable record of what the code found. Ignore scratch output by its
-# own path rather than ignoring figures wholesale.
+# Generated figures in a working repo: the code is the artifact.
+# Curated memo and report PDFs are committed; bulk figure output is not.
+figs/
+figures/
 
 # Credentials
 .env
