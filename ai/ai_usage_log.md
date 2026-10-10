@@ -104,4 +104,4 @@ command produces this format and appends it in the right order.
   instantiated, unreachable upstream) and on this template. Hook format checked against the
   Claude Code hooks documentation. Project hooks run without a trust prompt; this one only reads
   `.claude/template.json` and makes one public HTTPS request to GitHub.
-- **Git Hash**: [fill in after committing]
+- **Git Hash**: 4887dfb, branch `template-sync-tooling`
