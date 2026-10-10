@@ -86,4 +86,4 @@ command produces this format and appends it in the right order.
 - **Sections/Files Affected**: `CLAUDE.md` ("Curated Documents"), `.claude/commands/commit.md` (step 2b), `.claude/rules/python-code.md`, `.gitignore` (`figs/` and `figures/` are ignored again, as before the earlier PR).
 - **Nature of Contribution**: Edit (workflow guidance).
 - **Human Review Status**: Pending review.
-- **Git Hash**: [fill in after committing]
+- **Git Hash**: febc1c6, branch `curated-documents-only`
