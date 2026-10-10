@@ -77,3 +77,13 @@ command produces this format and appends it in the right order.
 - **Human Review Status**: Pending review.
 - **Notes**: The `.gitignore` no longer ignores `figs/` and `figures/` by default; the opposite default.
 - **Git Hash**: 81753cf, branch `commit-rendered-output`
+
+## [2026-10-10 12:35 UTC]
+- **Tool**: Claude (Anthropic), claude-opus-5-5 (1M context)
+- **Session Purpose**: Narrow the committed-output rule to curated documents, at NAF's direction
+  (2026-10-10): "I'm looking more to capture PDFs that are memos, notes, or some more curated
+  level of analysis", not large generated outputs such as figure batches.
+- **Sections/Files Affected**: `CLAUDE.md` ("Curated Documents"), `.claude/commands/commit.md` (step 2b), `.claude/rules/python-code.md`, `.gitignore` (`figs/` and `figures/` are ignored again, as before the earlier PR).
+- **Nature of Contribution**: Edit (workflow guidance).
+- **Human Review Status**: Pending review.
+- **Git Hash**: febc1c6, branch `curated-documents-only`
