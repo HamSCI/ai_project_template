@@ -76,4 +76,4 @@ command produces this format and appends it in the right order.
 - **Nature of Contribution**: Edit (workflow guidance).
 - **Human Review Status**: Pending review.
 - **Notes**: The `.gitignore` no longer ignores `figs/` and `figures/` by default; the opposite default.
-- **Git Hash**: [fill in after committing]
+- **Git Hash**: 81753cf, branch `commit-rendered-output`
