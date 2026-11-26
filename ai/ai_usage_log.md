@@ -123,3 +123,11 @@ command produces this format and appends it in the right order.
 - **Notes**: Tested on scratch repositories (behind: flagged with file list; only ignorable
   changes: silent) and on the live w2naf-academia template (flags both siblings' tooling PRs).
 - **Git Hash**: f59d373, branch `template-check-filter`
+
+## [2026-11-26 13:55 UTC]
+- **Tool**: Claude (Anthropic), claude-opus-5-5
+- **Session Purpose**: NAF: "All AI-opened PRs should be opened in Draft mode. A human will click to convert from draft mode to ready to merge." and "Give the user brief instructions to change the PR from draft to ready after they review. Also, be sure to give the URL to the user every time you create or modify a PR." Apply the rule to research-conventions, the MSTID project and the three AI project templates.
+- **Sections/Files Affected**: `.claude/commands/commit.md`, `.claude/commands/template-sync.md`, `CLAUDE.md`, `docs/GETTING_STARTED.md`.
+- **Nature of Contribution**: Edit of workflow instructions from NAF's verbatim instruction and his acceptance of four proposed refinements.
+- **Human Review Status**: Pending review via PR.
+- **Git Hash**: [fill in after committing]

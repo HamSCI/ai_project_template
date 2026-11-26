@@ -82,8 +82,14 @@ like), caches, scratch output, and raw data. A curated PDF over 50 MB needs a de
 yours to declare).
 
 **Every change goes through a pull request.** Branch from `origin/main`, commit on the branch,
-push the branch, and open a PR with `gh pr create`. A human maintainer reviews and merges.
-Claude never commits or pushes directly to `main` and never merges.
+push the branch, and open a PR with `gh pr create --draft`. A human maintainer reviews it, clicks
+**Ready for review**, and merges. Claude never commits or pushes directly to `main`, never
+merges, and never runs `gh pr ready` unless asked for that PR. Every time Claude creates a PR or
+pushes to one, it gives the user the URL with one line: "After you review, click **Ready for
+review** at the bottom of the PR, then merge." Leave the word "draft" out of PR text and
+conversation; GitHub shows the status. If a PR already marked ready gets a substantive new
+commit, return it with `gh pr ready --undo` (the log hash update and a conflict-only merge of
+`main` are exempt).
 
 **Pushing a feature branch and opening its PR is standing permission** once the user has approved
 the commit. Any other push needs explicit instruction. Never force-push or hard-reset. Fetch and
