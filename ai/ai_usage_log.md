@@ -130,4 +130,4 @@ command produces this format and appends it in the right order.
 - **Sections/Files Affected**: `.claude/commands/commit.md`, `.claude/commands/template-sync.md`, `CLAUDE.md`, `docs/GETTING_STARTED.md`.
 - **Nature of Contribution**: Edit of workflow instructions from NAF's verbatim instruction and his acceptance of four proposed refinements.
 - **Human Review Status**: Pending review via PR.
-- **Git Hash**: [fill in after committing]
+- **Git Hash**: `1ea2eb8`, branch `pr-draft-workflow`, PR HamSCI/ai_project_template#8.
